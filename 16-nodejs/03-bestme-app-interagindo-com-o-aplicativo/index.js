@@ -26,7 +26,7 @@ process.stdin.on("data", data => {
 
 process.on('exit', () => {
   console.log(`
-    Massa Felipe Brenner!
+    Massa Lucas Damasceno!
 
     O que você aprendeu hoje foi:
     ${answers[0]}

@@ -7,7 +7,7 @@ function Character(name) {
 
 inherits(Character, EventEmitter)
 
-const chapolin = new Character('Felipe Brenner')
+const chapolin = new Character('Lucas Damasceno')
 chapolin.on('help', () => console.log(`Eu! O ${chapolin.name} colorado!`))
 
 console.log('Oh! E agora, quem poderá me defender?')

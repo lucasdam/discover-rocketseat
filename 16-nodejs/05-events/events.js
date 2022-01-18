@@ -5,11 +5,11 @@ ev.on('saySomething', (message) => {
   console.log(message)
 })
 
-ev.emit('saySomething', "Mensagem by Felipe Brenner")
+ev.emit('saySomething', "Mensagem by Lucas Damasceno")
 
 ev.once('saySomethingOnce', (message) => {
   console.log(message)
 })
 
-ev.emit('saySomethingOnce', "Mensagem by Felipe")
-ev.emit('saySomethingOnce', "Mensagem by Brenner")
+ev.emit('saySomethingOnce', "Mensagem by Lucas")
+ev.emit('saySomethingOnce', "Mensagem by Damasceno")
