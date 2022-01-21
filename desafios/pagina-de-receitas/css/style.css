@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAEAEA;
+    font-family: 'Roboto', sans-serif;
+}
+
+article {
+    padding: 20px 0px;
+    background-color: #FFFFFF;
+    margin: 30px auto;
+    width: 60%;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding: 0px 30px;
+    border-radius: 4.4%;
+}
+
+figcaption {
+    text-align: right;
+    color: #8F8F8F;
+    font-size: 12px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    color: #1B1B1B;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 20px 15px 20px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p, li {
+    color: #39393A;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0px 30px;
+}
+
+li {
+    line-height: 36px;
+    list-style-position: inside;
+}
+
+footer {
+    color: #8F8F8F;
+    font-size: 12px;
+    text-align: center;
+    margin: 40px 0px 20px;
+}
+
+/*
+    Melhorar:
+        - Borda da imagem
+        - Altura da linha quando o texto quebra
+*/
