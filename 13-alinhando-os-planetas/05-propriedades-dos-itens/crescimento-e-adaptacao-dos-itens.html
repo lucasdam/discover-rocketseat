@@ -1,0 +1,46 @@
+<!--
+    # flex-grow
+
+    - O crescimento do item dentro do container em relação aos espaços vazios
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            border: 1px dashed red;
+            flex-direction: column;
+            height: 150px;
+        }
+
+        .box div {
+            border: 1px solid;
+        }
+
+        /* 0 é o padrão. Não cresce em relação a nada. 1 pega todo o espaço disponível. Se outro elemento tiver 1, o espaço disponível será dividido entre os dois elementos. */
+
+        .box div:nth-child(2), 
+        .box div:nth-child(3) {
+            flex-grow: 1;
+        }
+
+        .box div:nth-child(1) {
+            flex-grow: 2; /* 2 frações para o (1) */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+</html>
