@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#foto-perfil {
+    width: 200px;
+    border: 2px solid var(--purple);
+    border-radius: 50%;
+    padding: 4px;
+}
+
+#link-instagram {
+    font-weight: 300;
+    margin: -5px 0px 25px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+.boxs div {
+    border: 3px solid var(--purple);
+    border-radius: 3px;
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.boxs div:hover {
+    background-color: var(--purple);
+    color: var(--body-bg-color);
+    transition-duration: 0.3s;
+}
+
+.boxs a {
+    font-weight: 600;
+}
+
+.boxs a div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    margin-top: 50px;
+}
+
+.icons a {
+    margin: 10px;
+}
+
+.icons img {
+    width: 25px;
+}
+
+.icons img:hover {
+    transform: scale(1.3);
+}
