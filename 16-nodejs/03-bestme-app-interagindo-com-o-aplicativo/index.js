@@ -1,26 +1,27 @@
-const questions = [
+// node index, para executar no terminal (se atentar ao diretório)
+
+const questions = [ /* Array de perguntas */
   "O que aprendi hoje?",
-  "O que me deixou aborrecido?",
-  "O que eu poderia fazer para melhorar?",
+  "O que me deixou aborrecido? E o que eu poderia fazer para melhorar?",
   "O que me deixou feliz hoje?",
   "Quantas pessoas ajudei hoje?" 
 ]
 
-const ask = ( index = 0 ) => {
+const ask = ( index = 0 ) => { /* Printa a pergunta */
   process.stdout.write("\n" + questions[index] + " > ")
 }
 
-const answers = []
+const answers = [] /* Array com as repostas que serão digitadas */
 
 ask()
 
-process.stdin.on("data", data => {
-  answers.push(data.toString().trim())
-  if(answers.length < questions.length) {
+process.stdin.on("data", data => { /* Entrada da resposta do usuário. "on" funciona como um listener */
+  answers.push(data.toString().trim()) /* Formata a resposta e insere no array */
+  if(answers.length < questions.length) { /* Se a quantidade de respostas for menor que a quantidade de perguntas, chama a função de perguntar novamente, pois ainda há pergunta(s) a se fazer. Passando com index a quantidade que já tem de respostas */
     ask(answers.length)
   } else {
-    console.log(answers)
-    process.exit()
+    console.log(answers) /* Se a quantidade de respostas se igualar com a quantidade de perguntas, printa as respostas que foram dadas */
+    process.exit() /* E encerra o processo */
   }
 })
 

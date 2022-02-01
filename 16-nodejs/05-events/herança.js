@@ -5,9 +5,9 @@ function Character(name) {
   this.name = name
 }
 
-inherits(Character, EventEmitter)
+inherits(Character, EventEmitter) /* Foram herdadas para o Character, todas as opções do EventEmitter */
 
-const chapolin = new Character('Lucas Damasceno')
+const chapolin = new Character('Chapolin')
 chapolin.on('help', () => console.log(`Eu! O ${chapolin.name} colorado!`))
 
 console.log('Oh! E agora, quem poderá me defender?')
