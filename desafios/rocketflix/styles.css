@@ -12,8 +12,10 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -22,7 +24,8 @@ body {
     flex-direction: column;
     align-items: center;
 
-    padding-top: 126px
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .logo {
@@ -34,6 +37,32 @@ body {
 .title {
     font-size: 40px;
     font-weight: 700;
+    color: var(--title);
+}
+
+.movie-content {
+    margin-top: 30px;
+    width: 628px;
+    display: flex;
+    gap: 34px;
+}
+
+.movie-poster {
+    width: 171px;
+    height: 243.77px;
+    padding-top: 8px;
+}
+
+.movie-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--title);
+    margin-bottom: 18.45px;
+}
+
+.movie-description {
+    font-size: 16px;
+    font-weight: 400;
     color: var(--title);
 }
 
