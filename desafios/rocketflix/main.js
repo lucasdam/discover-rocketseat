@@ -1,27 +1,37 @@
 import { API_KEY, BASE_URL, IMG_URL, language } from './api.js'
 
-const url = BASE_URL + 'discover/movie?' + API_KEY + '&' + language
 const div = document.querySelector('.title')
-
 document.querySelector('#find-movie-button').addEventListener('click', findMovie)
 
-async function getData(randomNumber) {
-    return await fetch(url)
+function getData(movieId) {
+    return fetch(BASE_URL + movieId + '?' + API_KEY + '&' + language)
         .then(response => response.json())
-        .then(data => data.results[randomNumber])
+        .then(data => data)
 }
 
 async function findMovie() {
-    const randomNumber = parseInt(Math.random() * 20)
-    const movie = await getData(randomNumber)
-    console.log(movie)
+    const movieId = parseInt(Math.random() * 1000)
+    const movie = await getData(movieId)
 
+    movie.title == undefined || movie.overview == '' ? findMovie() : showMovie(movie)
+}
+
+function showMovie(movie) {
+    const movieGenres = []
     const movieContent = document.querySelector('.movie-content')
     movieContent && movieContent.parentNode.removeChild(movieContent)
+    
+    movie.genres.forEach(genre => {
+        movieGenres.push(' ' + genre.name)
+    });
 
     div.insertAdjacentHTML('afterend', `
         <div class="movie-content">
-            <img class="movie-poster" src="${IMG_URL + movie.poster_path}" alt="Poster do filme">
+            <div>
+                <img class="movie-poster" src="${IMG_URL + movie.poster_path}" alt="Poster do filme">
+                <p class="movie-infos">Duração: ${movie.runtime} min</p>
+                <p class="movie-infos">Gênero:${movieGenres}</p>
+            </div>
 
             <div class="content-text">
                 <h3 class="movie-name">${movie.title}</h3>
