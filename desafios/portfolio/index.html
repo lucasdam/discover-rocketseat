@@ -13,193 +13,208 @@
 </head>
 <body>
 
-    <div class="container">
-        <!-- BARRA LATERAL -->
-        <aside>
-            <!-- Perfil -->
-            <div class="profile box">
-                <img id="profile-avatar" src="https://github.com/lucasdam.png" alt="Foto de Perfil">
-                <h1 id="profile-name">Lucas Damasceno</h1>
-                <p id="profile-role">Software Developer</p>
-            </div>
+    <main class="container">
 
-            <!-- Links Sociais -->
-            <div class="links box">
-                <div class="link">
-                    <img src="./assets/map-pin.svg" alt="Ícone de pino de mapa">
-                    Brasil
-                </div>
+        <!----------- COLUNA 1 ----------->
+        <aside class="columns">
 
-                <div class="link">
-                    <img src="./assets/briefcase.svg" alt="Ícone de maleta de trabalho">
-                    Rocketseat
-                </div>
-
-                <div class="link">
-                    <img src="./assets/github.svg" alt="Ícone do GitHub">
-                    lucasdam
-                </div>
-
-                <div class="link">
-                    <img src="./assets/linkedin.svg" alt="Ícone do LinkedIn">
-                    lucasdam
-                </div>
-
-                <div class="link">
-                    <img src="./assets/mail.svg" alt="Ícone de e-mail">
-                    lucassouzadamasceno@gmail.com
+            <!-- PERFIL -->
+            <div class="card profile">
+                <img src="https://github.com/lucasdam.png" alt="Foto de perfil">
+                <div>
+                    <h2>Lucas Damasceno</h2>
+                    <p>Software Developer</p>
                 </div>
             </div>
 
-            <!-- Tags das Tecnologias -->
-            <div class="technologies box">
-                <h2>Tecnologias</h2>
-                <div class="techs">
-                    <div class="tech">JavaScript</div>
-                    <div class="tech">React</div>
-                    <div class="tech">NodeJS</div>
-                    <div class="tech">Git</div>
-                    <div class="tech">GitHub</div>
-                    <div class="tech">HTML</div>
-                    <div class="tech">CSS</div>
-                    <div class="tech">Elixir</div>
-                    <div class="tech">React Native</div>
-                </div>
-            </div>
-
-            <!-- Experiências -->
-            <div class="experiences box">
-                <h2>Experiências</h2>
+            <!-- REDES SOCIAIS -->
+            <div class="card socials">
                 <ul>
-                    <li> Rocketseat
-                        <p>2021 - Atualmente</p>
-                        <p>Community Experience</p>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Fortaleza - CE
                     </li>
 
-                    <li> Scio Tech
-                        <p>2019 - 2021</p>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        Rocketseat
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        lucasdam
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        lucasdam
+                    </li>
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        lucassouzadamasceno@gmail.com
+                    </li>
+                </ul>
+            </div>
+
+            <!-- TECNOLOGIAS -->
+            <div class="card techs">
+                <h2>Tecnologias</h2>
+                <div>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>React</p>
+                    <p>NodeJS</p>
+                    <p>Git</p>
+                </div>
+            </div>
+
+            <!-- EXPERIÊNCIAS -->
+            <div class="card experiences">
+                <h2>Experiências</h2>
+                <ul>
+                    <li>
+                        <h5>Rocketseat</h5>
+                        <span>2021 - Atualmente</span>
+                        <p>Aluno</p>
+                    </li>
+
+                    <li>
+                        <h5>Scio Tech</h5>
+                        <span>2020 - 2021</span>
                         <p>Assistente de Sistemas</p>
                     </li>
                 </ul>
             </div>
 
-            <!-- Educação -->
-            <div class="education box">
+            <!-- EDUCAÇÃO -->
+            <div class="card education">
                 <h2>Educação</h2>
                 <ul>
-                    <li> Rocketseat
-                        <p>2019 - 2020</p>
-                        <p>Ignite Pro</p>
+                    <li>
+                        <h5>PUC Minas</h5>
+                        <span>2022 - Atualmente</span>
+                        <p>Desenvolvimento Web Full Stack</p>
                     </li>
 
-                    <li> Rocketseat
-                        <p>2019 - 2020</p>
-                        <p>Ignite Pro</p>
-                    </li>
-
-                    <li> Rocketseat
-                        <p>2019 - 2020</p>
-                        <p>Ignite Pro</p>
+                    <li>
+                        <h5>UNI7</h5>
+                        <span>2016 - 2021</span>
+                        <p>Sistemas de Informação</p>
                     </li>
                 </ul>
             </div>
+
         </aside>
 
-        <!-- CONTEÚDO PRINCIPAL -->
-        <main>
-            <!-- Seção de Projetos -->
-            <section class="my-projects box">
-                <h2>My Projects</h2>
+        <!----------- COLUNA 2 ----------->
+        <section class="columns column2">
+
+            <!-- MEUS PROJETOS -->
+            <div class="card projects-title">
+                <h3>Meus Projetos</h3>
                 <a href="#">Veja todos</a>
-            </section>
-
-            <div class="projects">
-                <!-- Projeto 1 -->
-                <article class="project box">
-                    <div class="project-title">
-                        <img src="./assets/folder.svg" alt="Ícone de pasta de arquivos">
-                        <h3>my-onix</h3>
-                    </div>
-
-                    <p>Consulte os códigos de erro que aparecem no painel do veículo Onix.</p>
-
-                    <div class="project-infos">
-                        <div class="project-stars-branchs">
-                            <div class="project-star-branch">
-                                <img src="./assets/star.svg" alt="Ícone de estrela">
-                                100
-                            </div>
-
-                            <div class="project-star-branch">
-                                <img src="./assets/git-branch.svg" alt="Ícone de branch do Git">
-                                100
-                            </div>
-                        </div>
-
-                        <div class="project-language">
-                            <div class="project-language-ball"></div>
-
-                            JavaScript
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Projeto 2 -->
-                <article class="project box">
-                    <div class="project-title">
-                        <img src="./assets/folder.svg" alt="Ícone de pasta de arquivos">
-                        <h3>letmeask</h3>
-                    </div>
-
-                    <p>Consulte os códigos de erro que aparecem no painel do veículo Onix.</p>
-
-                    <div class="project-infos">
-                        <div class="project-stars-branchs">
-                            <div class="project-star-branch">
-                                <img src="./assets/star.svg" alt="Ícone de estrela">
-                                100
-                            </div>
-
-                            <div class="project-star-branch">
-                                <img src="./assets/git-branch.svg" alt="Ícone de branch do Git">
-                                100
-                            </div>
-                        </div>
-
-                        <div class="project-language">
-                            <div class="project-language-ball"></div>
-
-                            TypeScript
-                        </div>
-                    </div>
-                </article>
             </div>
 
-            <!-- Seção de Posts -->
-            <section class="recent-posts box">
-                <h2>Recent Posts</h2>
-            </section>
+            <section class="projects">
 
-            <!-- Post 1 -->
-            <article class="post box">
-                <img class="post-avatar" src="https://github.com/lucasdam.png" alt="Foto de Perfil">
-
-                <div class="post-infos">
-                    <h3 class="post-title">Erro adb devices no Genymotion e Android Studio (React Native)</h3>
-                    <p>2 anos atrás</p>
-                    <p class="post-description">Esses são relatos do erro que lorem lorem ipsum dolor sit amet ameame ameame!</p>
-                    <div class="post-infos-tags">
-                        <span>#react-native</span>
-                        <span>#genymotion</span>
-                        <span>#development</span>
+                <!-- Projeto -->
+                <div class="card project">
+                    <!-- Nome -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <h4>letmeask</h4>
+                    </div>
+                    <!-- Descrição -->
+                    <p>Sistema de Q&A desenvolvido durante a Maratona Discover, missão React, da @Rocketseat.</p>
+                    <!-- Parte inferior -->
+                    <div class="bottom">
+                        <!-- Stars e Branchs -->
+                        <div class="icons">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <p>100</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-branch"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                                <p>100</p>
+                            </div>
+                        </div>
+                        <!-- Tecnologia -->
+                        <div class="tech">
+                            <div class="typescript-ball"></div>
+                            <p>Typescript</p>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Projeto -->
+                <div class="card project">
+                    <!-- Nome -->
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <h4>jobscalc</h4>
+                    </div>
+                    <!-- Descrição -->
+                    <p>Sistema de controle e cálculo de atividades freelance desenvolvido na Maratona Discover da @Rocketseat</p>
+                    <!-- Parte inferior -->
+                    <div class="bottom">
+                        <!-- Stars e Branchs -->
+                        <div class="icons">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <p>100</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-branch"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                                <p>100</p>
+                            </div>
+                        </div>
+                        <!-- Tecnologia -->
+                        <div class="tech">
+                            <div class="ejs-ball"></div>
+                            <p>EJS</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- POSTS RECENTES -->
+            <div class="card posts-title">
+                <h3>Posts Recentes</h3>
+            </div>
+
+            <!-- Post -->
+            <article class="card post">
+                <img src="https://github.com/lucasdam.png" alt="Foto de Lucas, autor do post">
+
+                <section>
+                    <div>
+                        <h3>Vantagens de utilizar Typescript</h3>
+                        <span>2 dias atrás</span>
+                    </div>
+
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, non doloremque maxime dolores autem sit nihil. Nam maxime praesentium dolorum!</p>
+                        <div class="tags">
+                            <p>#typescript</p>
+                            <p>#javascript</p>
+                            <p>#react</p>
+                            <p>#front-end</p>
+                        </div>
+                    </div>
+                </section>
+                
             </article>
-        </main>
-    </div>
+
+        </section>
+
+    </main>
 
     <footer>
-        <p>Feito com S2 por <a href="https://github.com/lucasdam">Lucas Damasceno</a></p>
+        Feito com ❤ por&nbsp<a href="https://github.com/lucasdam" target="_blank">Lucas Damasceno</a>
     </footer>
     
 </body>
